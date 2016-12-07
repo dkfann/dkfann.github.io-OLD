@@ -3,13 +3,13 @@ function bindElements() {
 		
 	});
 
-	$('.c-add').on('click touchstart', function() {
+	$('.c-add').click(function() {
 		var healthCount = $(this).prev().find('.c-health-counter');
 		var newHealth = parseInt(healthCount.html()) + 1;
 		healthCount.html(newHealth);
 	});
 
-	$('.c-min').on('click touchstart', function() {
+	$('.c-min').click(function() {
 		var healthCount = $(this).next().find('.c-health-counter');
 		if (parseInt(healthCount.html()) === 0) {
 			$(this).parent('.c-health-container').addClass('is-hidden');
