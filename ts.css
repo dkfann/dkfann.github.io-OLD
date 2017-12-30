@@ -1,0 +1,83 @@
+.c-title {
+	text-align: center;
+}
+
+.o-container {
+	display: flex;
+	justify-content: center;
+}
+
+.o-tableau {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex: 0 1 1200px;
+}
+
+.o-zone {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 1 1 1200px;
+}
+
+.o-zone-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.o-zone-health {
+
+}
+
+.c-health-container img,
+.c-select-shield-container img {
+	width: 50px;
+	height: auto;
+}
+
+.c-select-shield-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.c-mod-health {
+	margin: 0 1rem;
+}
+
+.c-health-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.c-health {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.is-hidden {
+	display: none;
+}
+
+.panel-body:before,
+.panel-body:after {
+	display: none;
+}
+
+.c-health-counter {
+	font-size: 4rem;
+}
+
+.o-zone-loc {
+	font-size: 5rem;
+	font-weight: 700;
+}

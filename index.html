@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TIME STORIES</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./ts.css">
+</head>
+<body>	
+	
+	<div class="c-title page-header">
+		<h1>TIME STORIES SHIELD MANAGER</h1>
+	</div>
+	<div class="o-container">
+		<div class="o-tableau">
+			<div class="o-zone panel">
+				<div class="o-zone-details panel-body">
+					<div class="o-zone-loc">B</div>
+					<div class="c-health-container c-shield is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield.jpg" alt="">
+							<div class="c-health-counter">0</div>	
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-heart is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Heart.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-skull is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Skull.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-special is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Special.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-time is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Time.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="o-zone-health">
+						<button class="btn btn-primary c-add-shield" data-toggle="modal" data-target="#c-shield-select-modal">Add Health Type</button>
+					</div>
+				</div>
+			</div>
+			<div class="o-zone panel">
+				<div class="o-zone-details panel-body">
+					<div class="o-zone-loc">C</div>
+					<div class="c-health-container c-shield is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield.jpg" alt="">
+							<div class="c-health-counter">0</div>	
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-heart is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Heart.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-skull is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Skull.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-special is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Special.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-time is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Time.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="o-zone-health">
+						<button class="btn btn-primary c-add-shield" data-toggle="modal" data-target="#c-shield-select-modal">Add Health Type</button>
+					</div>
+				</div>
+			</div>
+			<div class="o-zone panel">
+				<div class="o-zone-details panel-body">
+					<div class="o-zone-loc">D</div>
+					<div class="c-health-container c-shield is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield.jpg" alt="">
+							<div class="c-health-counter">0</div>	
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-heart is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Heart.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-skull is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Skull.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-special is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Special.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-time is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Time.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="o-zone-health">
+						<button class="btn btn-primary c-add-shield" data-toggle="modal" data-target="#c-shield-select-modal">Add Health Type</button>
+					</div>
+				</div>
+			</div>
+			<div class="o-zone panel">
+				<div class="o-zone-details panel-body">
+					<div class="o-zone-loc">E</div>
+					<div class="c-health-container c-shield is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield.jpg" alt="">
+							<div class="c-health-counter">0</div>	
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-heart is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Heart.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-skull is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Skull.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-special is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Special.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-time is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Time.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="o-zone-health">
+						<button class="btn btn-primary c-add-shield" data-toggle="modal" data-target="#c-shield-select-modal">Add Health Type</button>
+					</div>
+				</div>
+			</div>
+			<div class="o-zone panel">
+				<div class="o-zone-details panel-body">
+					<div class="o-zone-loc">F</div>
+					<div class="c-health-container c-shield is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield.jpg" alt="">
+							<div class="c-health-counter">0</div>	
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-heart is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Heart.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-skull is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Skull.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-special is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Special.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="c-health-container c-shield-time is-hidden">
+						<button class="btn btn-default c-mod-health c-min">
+							<span class="glyphicon glyphicon-minus"></span>
+						</button>
+						<div class="c-health">
+							<img src="../ts-images/Shield-Time.jpg" alt="">
+							<div class="c-health-counter">0</div>
+						</div>
+						<button class="btn btn-default c-mod-health c-add">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+					<div class="o-zone-health">
+						<button class="btn btn-primary c-add-shield" data-toggle="modal" data-target="#c-shield-select-modal">Add Health Type</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="c-shield-select-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Select A Shield Type</h4>
+					</div>
+					<div class="modal-body c-select-shield-container">
+							<img class="c-shield-select" src="../ts-images/Shield.jpg" alt="" id="shield">
+							<img class="c-shield-select" src="../ts-images/Shield-Heart.jpg" alt="" id="shield-heart">
+							<img class="c-shield-select" src="../ts-images/Shield-Skull.jpg" alt="" id="shield-skull">
+							<img class="c-shield-select" src="../ts-images/Shield-Special.jpg" alt="" id="shield-special">
+							<img class="c-shield-select" src="../ts-images/Shield-Time.jpg" alt="" id="shield-time">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./ts.js"></script>
+</body>
+</html>
